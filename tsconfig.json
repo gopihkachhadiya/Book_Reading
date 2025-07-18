@@ -1,3 +1,11 @@
 {
-  "extends": "@react-native/typescript-config"
+  "extends": "@react-native/typescript-config",
+  "compilerOptions": {
+    "types": ["react", "react-native"]
+  },
+  "include": [
+    "src",
+    "types", // if you place your .d.ts file here
+    "declarations.d.ts" // or the exact file if not in a folder
+  ]
 }

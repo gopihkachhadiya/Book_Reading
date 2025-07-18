@@ -1,8 +1,7 @@
 import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import CustomDrawerContent from '../components/CustomDrawerContent';
-import Notes from '../screens/Home/Notes/Notes';
-import Search from '../screens/Home/Notes/Search/Search';
+import TabNavigator from './TabNavigator';
 
 const Drawer = createDrawerNavigator();
 
@@ -26,16 +25,8 @@ const DrawerNavigator = () => {
       }}
     >
       <Drawer.Screen
-        name="Notes"
-        component={Notes}
-        options={{
-          title: 'Vachanamrut',
-          drawerLabel: 'Home',
-        }}
-      />
-      <Drawer.Screen
-        name="Search"
-        component={Search}
+        name="MainTabs"
+        component={TabNavigator}
         options={{
           title: 'Vachanamrut',
           drawerLabel: 'Home',

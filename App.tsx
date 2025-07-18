@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { SafeAreaView, StatusBar, StyleSheet } from 'react-native';
 import DrawerNavigator from './src/navigation/DrawerNavigator';
 
-function App(): JSX.Element {
+function App(): React.ReactElement {
   return (
     <NavigationContainer>
       <SafeAreaView style={styles.container}>
